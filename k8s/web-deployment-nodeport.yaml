@@ -86,9 +86,9 @@ spec:
         # 1번 컨테이너: Nginx (웹서버 역할)
         - name: nginx
 <<<<<<< HEAD
-          image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:latest
+          image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:3b4b261f7c44cc63e0fb734062641dea0671bb76
 =======
-          image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:nginx-85fd9f666cdf7d8ad6d535dd28008462457d1104
+          image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:3b4b261f7c44cc63e0fb734062641dea0671bb76
 >>>>>>> 587d8387d3f6f1617ec128721676e0b920ef8bcc
           ports:
             - containerPort: 80 # 컨테이너 안에서 Nginx가 사용하는 포트
@@ -102,7 +102,7 @@ spec:
 
         # # 2번 컨테이너: FastAPI (Application 역할)
         # - name: fastapi
-        #   image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:nginx-85fd9f666cdf7d8ad6d535dd28008462457d1104
+        #   image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:3b4b261f7c44cc63e0fb734062641dea0671bb76
         #   ports:
         #     - containerPort: 8000 # FastAPI가 사용하는 포트
         #   resources:
