@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  nginx:
+    image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:nginx-latest
+    ports: ["80:80"]
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./html:/usr/share/nginx/html:ro
+    depends_on: [fastapi]
+  fastapi:
+    image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:fastapi-latest
+    expose: ["8000"]
