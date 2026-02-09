@@ -8,5 +8,5 @@ services:
       - ./html:/usr/share/nginx/html:ro
     depends_on: [fastapi]
   fastapi:
-    image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:fastapi-latest
+    image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:nginx-latest
     expose: ["8000"]
