@@ -85,11 +85,7 @@ spec:
       containers:
         # 1번 컨테이너: Nginx (웹서버 역할)
         - name: nginx
-<<<<<<< HEAD
           image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:latest
-=======
-          image: 036333380579.dkr.ecr.us-east-1.amazonaws.com/sun/nginx-ecr:nginx-85fd9f666cdf7d8ad6d535dd28008462457d1104
->>>>>>> 587d8387d3f6f1617ec128721676e0b920ef8bcc
           ports:
             - containerPort: 80 # 컨테이너 안에서 Nginx가 사용하는 포트
           resources: # [중요] HPA가 CPU 사용량을 계산하기 위한 기준 설정
