@@ -38,8 +38,8 @@ jobs:
           docker build -t $ECR_REGISTRY/sun/nginx-ecr:$IMAGE_TAG ./nginx
           docker push $ECR_REGISTRY/sun/nginx-ecr:$IMAGE_TAG
 
-          # docker tag $ECR_REGISTRY/sun/nginx-ecr:$IMAGE_TAG $ECR_REGISTRY/sun/nginx-ecr:nginx-latest
-          # docker push $ECR_REGISTRY/sun/nginx-ecr:nginx-latest
+          docker tag $ECR_REGISTRY/sun/nginx-ecr:$IMAGE_TAG $ECR_REGISTRY/sun/nginx-ecr:nginx-latest
+          docker push $ECR_REGISTRY/sun/nginx-ecr:nginx-latest
 
       # - name: Build & Push FastAPI
       #   env:
